@@ -1,0 +1,16 @@
+PODS:
+  - QCropper (0.1.7)
+
+DEPENDENCIES:
+  - QCropper
+
+SPEC REPOS:
+  trunk:
+    - QCropper
+
+SPEC CHECKSUMS:
+  QCropper: aef6bad1e683e62b501fb8258359ccd10c68b4f2
+
+PODFILE CHECKSUM: bdccd3c895ca4219184d1770205e65b9e44d1eb3
+
+COCOAPODS: 1.11.3
