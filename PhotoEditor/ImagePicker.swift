@@ -13,7 +13,7 @@ import Photos
 protocol ImagePickerDelegate: class {
     func imagePicker(_ imagePicker: ImagePicker, grantedAccess: Bool,
                      to sourceType: UIImagePickerController.SourceType)
-    func imagePicker(_ imagePicker: ImagePicker, didSelect image: UIImage)
+    func imagePicker(_ imagePicker: ImagePicker, didSelect image: UIImage,name: String, size: Float)
     func cancelButtonDidClick(on imageView: ImagePicker)
 }
 
@@ -100,15 +100,15 @@ extension ImagePicker: UIImagePickerControllerDelegate {
 
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[.editedImage] as? UIImage {
-            delegate?.imagePicker(self, didSelect: image)
-            return
-        }
+        let photo = info[.phAsset] as? PHAsset
+         let filename = photo?.value(forKey: "filename") as! String
 
         if let image = info[.originalImage] as? UIImage {
-            delegate?.imagePicker(self, didSelect: image)
-        } else {
-            print("Other source")
+            var data = image.jpegData(compressionQuality: 1.0)!
+            var size = Float(Double(data.count)/1024/1024)
+
+            delegate?.imagePicker(self, didSelect: image,name: filename,size:size)
+            return
         }
     }
 
