@@ -50,13 +50,23 @@
                                             <action selector="openCameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBS-TO-wGC"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaI-zx-isa">
+                                        <rect key="frame" x="0.0" y="140" width="364" height="0.0"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="checkmark.seal.fill" catalog="system" title="    Save"/>
+                                        <connections>
+                                            <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6w-cS-Ot7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="61e-0K-sfP"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vqh-x7-C3J">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.text.image" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Vqh-x7-C3J">
                                 <rect key="frame" x="25" y="69" width="364" height="364"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Vqh-x7-C3J" secondAttribute="height" multiplier="1:1" id="XkF-8f-DYU"/>
                                 </constraints>
@@ -102,6 +112,7 @@
                         <outlet property="fileNameLabel" destination="grG-xt-uEM" id="kK2-dC-vaw"/>
                         <outlet property="fileSizeLabel" destination="mGf-K8-G1L" id="i1l-dl-c02"/>
                         <outlet property="imageView" destination="Vqh-x7-C3J" id="7kH-93-3AL"/>
+                        <outlet property="saveButton" destination="CaI-zx-isa" id="bOD-H2-qlQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -111,6 +122,8 @@
     </scenes>
     <resources>
         <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="checkmark.seal.fill" catalog="system" width="128" height="128"/>
+        <image name="doc.text.image" catalog="system" width="115" height="128"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">

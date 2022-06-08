@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please allow photo access to save</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string></string>
+	<string>please allow photo acess to edit images</string>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>please allow photo acess to edit images</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

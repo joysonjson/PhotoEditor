@@ -15,6 +15,8 @@
 		086F3688284FC54F00CC6131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086F3686284FC54F00CC6131 /* LaunchScreen.storyboard */; };
 		086F3690284FC6D200CC6131 /* ImageCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F368F284FC6D200CC6131 /* ImageCropViewController.swift */; };
 		086F3692284FD17500CC6131 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F3691284FD17500CC6131 /* ImagePicker.swift */; };
+		088EACC22850F13C007FD854 /* AlertOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088EACC12850F13B007FD854 /* AlertOptions.swift */; };
+		088EACC42850F159007FD854 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088EACC32850F159007FD854 /* Extension.swift */; };
 		1E589F422050E767CF1DC63E /* Pods_PhotoEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14046E9D075EEB5B4B970DD6 /* Pods_PhotoEditor.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		086F3689284FC54F00CC6131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086F368F284FC6D200CC6131 /* ImageCropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropViewController.swift; sourceTree = "<group>"; };
 		086F3691284FD17500CC6131 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		088EACC12850F13B007FD854 /* AlertOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOptions.swift; sourceTree = "<group>"; };
+		088EACC32850F159007FD854 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		14046E9D075EEB5B4B970DD6 /* Pods_PhotoEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6847585D9676E407F8AE43E6 /* Pods-PhotoEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEditor.release.xcconfig"; path = "Target Support Files/Pods-PhotoEditor/Pods-PhotoEditor.release.xcconfig"; sourceTree = "<group>"; };
 		B78FA4BFB06733A668E22722 /* Pods-PhotoEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEditor.debug.xcconfig"; path = "Target Support Files/Pods-PhotoEditor/Pods-PhotoEditor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				086F367B284FC54A00CC6131 /* AppDelegate.swift */,
 				086F367D284FC54A00CC6131 /* SceneDelegate.swift */,
 				086F367F284FC54A00CC6131 /* ViewController.swift */,
+				088EACC12850F13B007FD854 /* AlertOptions.swift */,
+				088EACC32850F159007FD854 /* Extension.swift */,
 				086F3691284FD17500CC6131 /* ImagePicker.swift */,
 				086F368F284FC6D200CC6131 /* ImageCropViewController.swift */,
 				086F3681284FC54A00CC6131 /* Main.storyboard */,
@@ -213,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				086F3680284FC54A00CC6131 /* ViewController.swift in Sources */,
+				088EACC22850F13C007FD854 /* AlertOptions.swift in Sources */,
+				088EACC42850F159007FD854 /* Extension.swift in Sources */,
 				086F367C284FC54A00CC6131 /* AppDelegate.swift in Sources */,
 				086F3692284FD17500CC6131 /* ImagePicker.swift in Sources */,
 				086F3690284FC6D200CC6131 /* ImageCropViewController.swift in Sources */,

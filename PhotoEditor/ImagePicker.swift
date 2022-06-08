@@ -92,7 +92,9 @@ extension ImagePicker {
 
 // MARK: UINavigationControllerDelegate
 
-extension ImagePicker: UINavigationControllerDelegate { }
+extension ImagePicker: UINavigationControllerDelegate {
+//    didfinish
+}
 
 // MARK: UIImagePickerControllerDelegate
 
@@ -104,13 +106,25 @@ extension ImagePicker: UIImagePickerControllerDelegate {
          let filename = photo?.value(forKey: "filename") as! String
 
         if let image = info[.originalImage] as? UIImage {
-            var data = image.jpegData(compressionQuality: 1.0)!
-            var size = Float(Double(data.count)/1024/1024)
+            let data = image.jpegData(compressionQuality: 1.0)!
+            let size = Float(Double(data.count)/1024/1024)
 
             delegate?.imagePicker(self, didSelect: image,name: filename,size:size)
             return
         }
     }
+    func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+          if let error = error {
+              // we got back an error!
+              let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+              ac.addAction(UIAlertAction(title: "OK", style: .default))
+//              present(ac, animated: true)
+          } else {
+              let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .alert)
+              ac.addAction(UIAlertAction(title: "OK", style: .default))
+//              present(ac, animated: true)
+          }
+      }
 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         delegate?.cancelButtonDidClick(on: self)
